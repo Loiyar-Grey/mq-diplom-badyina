@@ -912,10 +912,10 @@ body {
   text-transform: uppercase;
   cursor: pointer;
 }
-/*
+
 ._hidden {
   display: none;
-}*/
+}
 
 @media (min-width: 768px) and (max-width: 1199px) {
 
