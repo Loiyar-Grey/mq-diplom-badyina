@@ -12,7 +12,7 @@
 
   <div class="popup _hidden">
     <div class="popup-content">
-      <label for="popup" class="popup-close">&#x2715;</label>
+      <label class="popup-close">&#x2715;</label>
       <form class="fields">
         <h3 class="popup-title"><a href="#0">Ваш фитбек</a></h3>
 
@@ -63,13 +63,11 @@
       </div>
     </div>
 
-    <div class="title">
-      <h1 class="title-text">Блог о творчестве, спорте <br> и образе жизни</h1>
-    </div>
+    <h1 class="title-text">Блог о творчестве, спорте <br> и образе жизни</h1>
   </header>
 
   <aside class="trends">
-    <h3 class="trends-title"><a href="#0">Сейчас в тренде</a></h3>
+    <h3 class="aside-section-title"><a href="#0">Сейчас в тренде</a></h3>
     <div class="trend-conteiner">
       <section class="trend garden">
         <div class="trend-content">
@@ -132,7 +130,7 @@
 
           <a href="#0" rel="author" class="author-article-link">Неизвестный автор</a>
 
-          <div class="article--content">
+          <div class="article-content">
             Итак, вы в Питере. Ранее утро. Лед с рек и каналов уже ушел, запущены фонтаны города... Музеи еще закрыты.
             Что посмотреть?
           </div>
@@ -154,7 +152,7 @@
 
           <a href="#0" rel="author" class="author-article-link">Неизвестный автор</a>
 
-          <div class="article--content">
+          <div class="article-content">
             Расскажем, какие упражнения выбрать и как сделать коврик для занятий йогой из того, что можно найти в шкафу.
           </div>
         </div>
@@ -174,9 +172,9 @@
 
           <a href="#0" rel="author" class="author-article-link">Неизвестный автор</a>
 
-          <div class="article--content">
+          <div class="article-content">
             Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьёте свою палатку?
-            <div class="article--content-01">
+            <div class="article-content-01">
               Мы составили список лучших летних фестивалей по всему миру.</div>
           </div>
 
@@ -198,7 +196,7 @@
 
           <a href="#0" rel="author" class="author-article-link">Неизвестный автор</a>
 
-          <div class="article--content">
+          <div class="article-content">
             Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем физику, химию и микробиологию
             еды.
 
@@ -222,7 +220,7 @@
 
           <a href="#0" rel="author" class="author-article-link">Неизвестный автор</a>
 
-          <div class="article--content">
+          <div class="article-content">
             Подушки для дивана целесообразнее заказать в съемных чехлах на молнии, если потребуется чистка подушек,
             проще снять чехлы, чем везти подушку в химчистку.
           </div>
@@ -275,19 +273,18 @@
                 волос</a></h4>
           </div>
         </div>
-
-        <form class="form-search">
-          <label class="search-mark">
-            <span class="search-text">Поле поиска</span>
-            <input type="search" class="input-field" placeholder="Найти...">
-          </label>
-          <button type="submit" class="search-button"></button>
-        </form>
       </section>
+
+      <form class="form-search">
+        <label class="search-mark">
+          <span class="search-text">Поле поиска</span>
+          <input type="search" class="input-field" placeholder="Найти...">
+        </label>
+        <button type="submit" class="search-button"></button>
+      </form>
 
       <section class="email-section">
         <h4 class="aside-title"><a href="#0">Рассылка</a></h4>
-
         <form class="form-email">
           <label class="email-mark">
             <span class="email-text">Введите Email</span>
@@ -328,12 +325,16 @@
   </div>
 
   <aside class="shop">
-    <h3 class="shops-title"><a href="#0">Наши изделия</a></h3>
+    <h3 class="aside-section-title"><a href="#0">Наши изделия</a></h3>
 
     <div class="shop-conteiner">
       <div class="shop-box">
         <div class="shop-img">
-          <img src="images/shop-item-desk1.jpg" class="img-item" alt="Подушки на диван">
+          <picture>
+            <source srcset="images/shop-item-mobile1.jpg" media="(max-width: 767px)">
+            <source srcset="images/shop-item-tablet1.jpg" media="(max-width: 1199px)">
+            <img src="images/shop-item-desk1.jpg" class="img-item" alt="Подушки на диван">
+          </picture>
         </div>
         <div class="shop-content">
           <h3 class="shop-title">Подушки на диван</h3>
@@ -361,7 +362,11 @@
 
       <div class="shop-box">
         <div class="shop-img">
-          <img src="images/shop-item-desk2.jpg" class="img-item" alt="Кукла «Зайчик»">
+          <picture>
+            <source srcset="images/shop-item-mobile2.jpg" media="(max-width: 767px)">
+            <source srcset="images/shop-item-tablet2.jpg" media="(max-width: 1199px)">
+            <img src="images/shop-item-desk2.jpg" class="img-item" alt="Кукла «Зайчик»">
+          </picture>
         </div>
         <div class="shop-content">
           <h3 class="shop-title">Кукла «Зайчик»</h3>
@@ -385,7 +390,11 @@
 
       <div class="shop-box">
         <div class="shop-img">
-          <img src="images/shop-item-desk3.jpg" class="img-item" alt="Подушки на диван">
+          <picture>
+            <source srcset="images/shop-item-mobile3.jpg" media="(max-width: 767px)">
+            <source srcset="images/shop-item-tablet3.jpg" media="(max-width: 1199px)">
+            <img src="images/shop-item-desk3.jpg" class="img-item" alt="Подушки на диван">
+          </picture>
         </div>
         <div class="shop-content">
           <h3 class="shop-title">Шестиугольная рамка</h3>
@@ -407,12 +416,9 @@
             </div>
             <button class="product-button" type="button">в магазин</button>
           </div>
-
         </div>
       </div>
-
     </div>
-
   </aside>
 
   <footer class="footer">
