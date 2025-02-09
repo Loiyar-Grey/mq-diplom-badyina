@@ -342,6 +342,7 @@ body {
 }
 
 .article-content-01 {
+  display: block;
   padding-top: 10px;
 }
 
